@@ -13,10 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                pip --version
-                python3 -m venv /path/to/venv
-                . /path/to/venv/bin/activate
-                pip install -r requirements.txt
+                pip install fire==0.4.0
                 '''
             }
         }
