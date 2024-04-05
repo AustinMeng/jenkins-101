@@ -13,8 +13,9 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                python3 -m pip install --user pipx
-                pipx install requirements.txt
+                python3 -m venv /path/to/venv
+                . /path/to/venv/bin/activate
+                pip install fire-0.4.0
                 '''
             }
         }
