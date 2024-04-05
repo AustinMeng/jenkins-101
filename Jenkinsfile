@@ -13,10 +13,8 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                pip --version
-                python3 -m venv /path/to/venv
-                . /path/to/venv/bin/activate
-                pip install -r requirements.txt
+                sudo apt install pipx
+                pipx install requirements.txt
                 '''
             }
         }
