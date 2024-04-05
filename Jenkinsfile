@@ -15,7 +15,7 @@ pipeline {
                 cd myapp
                 python3 -m venv ~/venv
                 . ~/venv/bin/activate
-                pip install fire-0.4.0
+                pip install requirements.txt
                 '''
             }
         }
